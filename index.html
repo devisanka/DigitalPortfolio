@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ola Ride Booking</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+
+header {
+    background-image: url('car.jpg');
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</head>
+
+
+<body>
+ <br>
+<marquee><h4>Welcome to online travels booking.. 2023</h4></marquee>
+    <header>
+
+        <h2>&nbsp&nbspOla-Ride Booking</h2>
+    </header>
+    <main>
+        <section id="ride-details">
+            <h2>Ride Details</h2>
+            <label for="pickup-location">Pickup Location:</label>
+            <input type="text" id="pickup-location" placeholder="Enter pickup location">
+            <label for="drop-location">Drop Location:</label>
+            <input type="text" id="drop-location" placeholder="Enter drop location">
+       <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+       
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required><br><br>
+       
+        <label for="passengers">Number of Passengers:</label>
+        <input type="number" id="passengers" name="passengers" required><br><br>
+       
+        <label for="special_requests">Special Requests:</label><br>
+        <textarea id="special_requests" name="special_requests" rows="4" cols="50"></textarea><br><br>
+       
+       
+           <a href="book.html"><button id="book-button">Book Ride</button></a>
+        </section>
+        <section id="booking-status">
+            <h2>Booking Status</h2>
+            <p id="status-message"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
